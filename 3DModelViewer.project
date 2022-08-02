@@ -1,0 +1,18 @@
+// To avoid annoyances with Windows min/max #defines.
+#define NOMINMAX
+
+#define IMGUI_USE_BGRA_PACKED_COLOR 1
+
+#include <imgui/backends/imgui_impl_dx11.cpp>
+#include <imgui/backends/imgui_impl_opengl3.cpp>
+#include <imgui/backends/imgui_impl_win32.cpp>
+#include <imgui/backends/imgui_sw.cpp>
+#include "Gui/Controls/ColorEditor.cpp"
+#include "Gui/Gui.cpp"
+#include "Gui/Panels/LightPanel.cpp"
+#include "Gui/Panels/MaterialPanel.cpp"
+#include "Gui/Panels/ObjectPanel.cpp"
+#include "Gui/Windows/CameraWindow.cpp"
+#include "Gui/Windows/RendererSettingsWindow.cpp"
+#include "Gui/Windows/SceneWindow.cpp"
+#include "3DModelViewer_Main.cpp"

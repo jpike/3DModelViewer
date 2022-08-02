@@ -1,0 +1,9 @@
+.vs/
+!.vs/tasks.vs.json
+
+build/
+
+*.obj
+*.ilk
+*.pdb
+build.exe

@@ -1,0 +1,55 @@
+{
+    "configurations":
+    [
+        {
+            "name": "debug",
+            "compilerSwitches": "/EHsc /WX /W4 /TP /std:c++latest /Z7 /Od /MTd",
+            "intelliSenseMode": "windows-msvc-x64",
+            "includePath":
+            [
+                "${env.INCLUDE}",
+                "${env.WindowsSdkDir}include/${env.WindowsSDKVersion}/ucrt",
+                "${env.WindowsSdkDir}include/${env.WindowsSDKVersion}/um",
+                "${env.WindowsSdkDir}include/${env.WindowsSDKVersion}/shared",
+                "${env.VCToolsInstallDir}include",
+                "${projectRoot}/code",
+                "${projectRoot}/../../CppLibraries",
+                "${projectRoot}/../../CppLibraries/Graphics/code",
+                "${projectRoot}/../../CppLibraries/Filesystem/code",
+                "${projectRoot}/../../CppLibraries/Math/code",
+                "${projectRoot}/../../CppLibraries/ThirdParty",
+                "${projectRoot}/../../CppLibraries/ThirdParty/Bgfx",
+                "${projectRoot}/../../CppLibraries/ThirdParty/Bgfx/bgfx/include",
+                "${projectRoot}/../../CppLibraries/ThirdParty/Bgfx/bx/include",
+                "${projectRoot}/../../CppLibraries/ThirdParty/gl3w",
+                "${projectRoot}/../../CppLibraries/ThirdParty/imgui",
+                "${projectRoot}/../../CppLibraries/ThirdParty/imgui/backends"
+            ]
+        },
+        {
+            "name": "release",
+            "compilerSwitches": "/EHsc /WX /W4 /TP /std:c++latest /O2 /MT",
+            "intelliSenseMode": "windows-msvc-x64",
+            "includePath":
+            [
+                "${env.INCLUDE}",
+                "${env.WindowsSdkDir}include/${env.WindowsSDKVersion}/ucrt",
+                "${env.WindowsSdkDir}include/${env.WindowsSDKVersion}/um",
+                "${env.WindowsSdkDir}include/${env.WindowsSDKVersion}/shared",
+                "${env.VCToolsInstallDir}include",
+                "${projectRoot}/code",
+                "${projectRoot}/../../CppLibraries",
+                "${projectRoot}/../../CppLibraries/Graphics/code",
+                "${projectRoot}/../../CppLibraries/Filesystem/code",
+                "${projectRoot}/../../CppLibraries/Math/code",
+                "${projectRoot}/../../CppLibraries/ThirdParty",
+                "${projectRoot}/../../CppLibraries/ThirdParty/Bgfx",
+                "${projectRoot}/../../CppLibraries/ThirdParty/Bgfx/bgfx/include",
+                "${projectRoot}/../../CppLibraries/ThirdParty/Bgfx/bx/include",
+                "${projectRoot}/../../CppLibraries/ThirdParty/gl3w",
+                "${projectRoot}/../../CppLibraries/ThirdParty/imgui",
+                "${projectRoot}/../../CppLibraries/ThirdParty/imgui/backends"
+            ]
+        }
+    ]
+}
