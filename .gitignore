@@ -1,7 +1,7 @@
 .vs/
 !.vs/tasks.vs.json
 
-build/
+//build/
 
 *.obj
 *.ilk

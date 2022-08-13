@@ -423,6 +423,7 @@ int CALLBACK WinMain(
     test_scene.Objects.emplace_back(*current_object);
 
     // ADD SOME SPHERES FOR RAY TRACING.
+#if SPHERES
     GRAPHICS::Object3D spheres;
     GRAPHICS::GEOMETRY::Sphere red_sphere;
     red_sphere.CenterPosition = MATH::Vector3f(0.0f, -1.0f, -3.0f);
@@ -446,6 +447,7 @@ int CALLBACK WinMain(
     spheres.Spheres.emplace_back(green_sphere);
 
     test_scene.Objects.emplace_back(spheres);
+#endif
 
     // RUN A MESSAGE LOOP.
     bool running = true;
@@ -519,6 +521,12 @@ int CALLBACK WinMain(
 
             // CREATE THE NEW TYPE OF GRAPHICS DEVICE.
             graphics_device = GRAPHICS::HARDWARE::IGraphicsDevice::Create(new_graphics_device_type, *g_window);
+
+            // LOAD OBJECTS INTO THE NEW GRAPHICS DEVICE.
+            for (GRAPHICS::Object3D& object : test_scene.Objects)
+            {
+                graphics_device->Load(object);
+            }
 
             // RE-INITIALIZE THE GUI.
             gui = GUI::Gui::Create(*graphics_device, *g_window);

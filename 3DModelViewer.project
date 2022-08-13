@@ -3,6 +3,10 @@
 
 #define IMGUI_USE_BGRA_PACKED_COLOR 1
 
+/// @todo   Not sure why lack of this causes issues.
+#define GL_ARB_debug_output 1
+#define GL_KHR_debug 1
+
 #include <imgui/backends/imgui_impl_dx11.cpp>
 #include <imgui/backends/imgui_impl_opengl3.cpp>
 #include <imgui/backends/imgui_impl_win32.cpp>
